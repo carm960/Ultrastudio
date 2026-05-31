@@ -943,3 +943,76 @@ body.contacts {
 .newsletter-form button {
   border-radius: 12px 0 12px 0;
 }
+
+/* ===========================
+   ABOUT
+   =========================== */
+/* HERO ABOUT — altezza dinamica per evitare tagli */
+.about-hero {
+  position: relative;
+  min-height: 110vh;      /* più alta → niente taglio sopra */
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+/* Immagine hero sfocata e centrata correttamente */
+.about-hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: top center;  /* MOSTRA LA PARTE SUPERIORE */
+  filter: blur(9px) brightness(0.5);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* Testo sovrapposto e centrato DAVVERO */
+.about-overlay {
+  position: absolute;
+  bottom: 26vh;           /* abbassa il testo */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;             /* più stretto → centrato */
+  max-width: 760px;
+  padding: 0 20px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 1.7;
+  z-index: 3;
+}
+
+/* Curva attaccata al fondo della hero */
+.about-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Footer attaccato alla curva */
+.footer {
+  margin-top: 0 !important;
+}
+/* Rimuove qualsiasi padding o allineamento ereditato dalla hero */
+.about-hero {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+/* Rimuove allineamenti che spingono a destra */
+.about-hero * {
+  margin-left: 0 !important;
+  justify-content: center !important;
+}
+
+/* Centra DAVVERO l'overlay */
+.about-overlay {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 55% !important;
+  text-align: center !important;
+}
