@@ -75,7 +75,6 @@ p {
     backdrop-filter: blur(0,5px); /* opzionale ma molto elegante */
 }
 
-
 .logo {
     font-family: 'Oswald', sans-serif;
     font-weight: 400; /* ExtraLight */
@@ -83,7 +82,6 @@ p {
     letter-spacing: 0.01em;
     color: #ffffff;
 }
-
 
 .nav {
   margin: 0 auto; /* CENTRA LA NAV */
