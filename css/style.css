@@ -129,6 +129,8 @@ p {
 }
 
 .hero-caption {
+  color: #111 !important;
+  text-shadow: 0 0 10px rgba(255,255,255,0.7); 
   position: absolute;
   bottom: 150px;
   left: 150px;
